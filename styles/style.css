@@ -249,6 +249,7 @@ ol {
 }
 
 .button {
+  height: 34px;
   cursor: pointer;
   background-color: transparent;
   font-family: 'Fira Sans Condensed';
@@ -258,7 +259,6 @@ ol {
   text-align: center;
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
-  height: 34px;
 }
 
 .button:hover {
