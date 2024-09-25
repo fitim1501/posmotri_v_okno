@@ -231,12 +231,11 @@ ol {
 
 .search-form__pseudo-checkbox:active::after, .search-form__checkbox:checked + span::after {
   content: '';
-  position: absolute;
+  margin: 1px auto;
   display: block;
   height: 15px;
   width: 15px;
   background-color: #FFFFFF;
-  inset: 1px 1px;
 }
 
 .search-form__label:has(:focus-visible){
