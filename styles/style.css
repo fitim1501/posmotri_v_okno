@@ -16,11 +16,9 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  /* background-color: bisque; */
   display: flex;
   justify-content: center;
   align-items: center;
-  outline: 1px solid red;
   padding: 0 30px;
 }
 
@@ -58,18 +56,15 @@ ol {
   justify-content: start;
   align-items: end;
   column-gap: 30px;  
-  background-color: #545050;
   width: 1140px;
+  height: 534px;
 }
 
 .search-form {
   display: flex;
   justify-content: space-between;
-  align-items: start;
-}
-
-.result {
-  
+  align-items: end;
+  height: 54px;
 }
 
 .result__video-container {
@@ -89,7 +84,7 @@ ol {
 .content__details {
   display: flex;
   flex-direction: column;
-  row-gap: 29px;
+  row-gap: 23px;
   width: 100%;
 }
 
@@ -99,6 +94,7 @@ ol {
   overflow-y: auto;
   -ms-overflow-style: none;
   scrollbar-width: none; 
+  padding-right: 3px;
 }
 
 .content__list::-webkit-scrollbar {
@@ -124,13 +120,14 @@ ol {
   display: flex;
   flex-direction: column;
   row-gap: 6px;
-  width: 200px;
+  flex-grow: 1;
+  padding: 2px 0px 4px 2px;
 }
 
 .search-form__fieldset-title {
   font-weight: 400;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 30px;
 }
 
 .title {
@@ -139,10 +136,11 @@ ol {
   font-size: 75px;
   line-height: 70px;
   text-transform: uppercase;
+  margin-top: 10px;
 }
 
 .content__accent { 
-  /* color: #545050; */
+  color: #545050;
 }
 
 .content__card-link {
@@ -161,6 +159,7 @@ ol {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  text-overflow: ellipsis;
 }
 
 .content__video-card-description {
@@ -186,7 +185,9 @@ ol {
 .search-form__checkbox-list {
   display: flex;
   justify-content: start;
-  column-gap: 5px;
+  align-items: center;
+  column-gap: 15px;
+  margin-bottom: 5px;
 }
 
 .button, .search-form__pseudo-checkbox {
@@ -240,10 +241,6 @@ ol {
   width: 15px;
   background-color: #FFFFFF;
   inset: 1px 1px;
-}
-
-.search-form__checkbox:checked {
-  background-color: red;
 }
 
 .search-form__label:has(:focus-visible){
