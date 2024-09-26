@@ -218,7 +218,6 @@ ol {
 }
 
 .search-form__textfield::placeholder {
-  font-family: 'Fira Sans Condensed';
   color: rgba(255, 255, 255, 0.7); 
 }
 
